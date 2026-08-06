@@ -9,8 +9,8 @@ Portfólio profissional desenvolvido para apresentar minhas habilidades técnica
 - **HTML5** - Estrutura semântica e acessibilidade
 - **CSS3** - Estilização moderna com animações e gradientes
 - **JavaScript** - Interatividade e filtros dinâmicos
-- **Font Awesome** - Ícones profissionais
-- **Google Fonts (Inter)** - Tipografia moderna e legível
+- **SVG e CSS locais** - Ícones e tipografia sem dependências externas
+- **Node.js** - Validação automatizada de HTML, referências e Lighthouse
 
 ## 📁 Estrutura do Projeto
 
@@ -25,7 +25,11 @@ Site Portfolio/
 ├── skills.css               # Estilos específicos para habilidades
 ├── projects.css             # Estilos para projetos e filtros
 ├── experience.css           # Estilos para experiência
-├── fundo.gif                # Background animado
+├── Plano de fundo/          # Fundos otimizados em JPEG e WebP
+├── scripts/                 # Validações e auditoria Lighthouse
+├── curriculo-bruno-rafael.pdf # Currículo para download
+├── robots.txt               # Regras para mecanismos de busca
+├── sitemap.xml              # Mapa do site
 └── README.md               # Documentação do projeto
 ```
 
@@ -41,7 +45,7 @@ Site Portfolio/
 
 #### Página Principal (`index.html`)
 - Apresentação profissional e resumo
-- **8 Projetos** organizados por categorias:
+- **9 Projetos** organizados por categorias:
   - **Python/AWS**: AWSTEXTRACT, AWS Rekognition
   - **Python/Azure**: Integrações Azure
   - **Web Development**: NutriSaúde, Projeto Podcast, Nicolas Tesla
@@ -121,7 +125,7 @@ Site Portfolio/
 ## 📊 Estatísticas do Projeto
 
 - **Total de Páginas**: 5
-- **Projetos Apresentados**: 8
+- **Projetos Apresentados**: 9
 - **Habilidades Técnicas**: 18
 - **Experiências Profissionais**: 3
 - **Certificações**: 10+
@@ -146,12 +150,12 @@ Site Portfolio/
 
 ## 🔧 Desenvolvimento Futuro
 
-- [ ] Adicionar formulário de contato funcional
+- [x] Adicionar formulário de contato funcional
 - [ ] Implementar dark/light mode toggle
-- [ ] Otimizar SEO com meta tags avançadas
+- [x] Otimizar SEO com meta tags avançadas
 - [ ] Adicionar mais projetos e experiências
 - [ ] Implementar PWA para offline access
-- [ ] Adicionar testes automatizados
+- [x] Adicionar testes automatizados
 
 ## 👨‍💻 Sobre o Desenvolvedor
 
@@ -179,4 +183,4 @@ Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICEN
 ---
 
 **Desenvolvido com ❤️ por Bruno Rafael**  
-© 2024 Todos os direitos reservados
+© 2026 Todos os direitos reservados

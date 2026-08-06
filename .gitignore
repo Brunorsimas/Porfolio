@@ -1,0 +1,5 @@
+node_modules/
+.lighthouseci/
+.lighthouse-tmp-*/
+.edge-pdf-profile/
+npm-debug.log*

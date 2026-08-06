@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Bruno Rafael — Analista de TI</title>
+  <desc id="desc">Imagem social do portfólio de Bruno Rafael</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050714"/>
+      <stop offset="0.55" stop-color="#0b1635"/>
+      <stop offset="1" stop-color="#180724"/>
+    </linearGradient>
+    <radialGradient id="cyan" cx="0" cy="0" r="1" gradientTransform="translate(1030 120) rotate(135) scale(470)">
+      <stop stop-color="#00f5ff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#00f5ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="magenta" cx="0" cy="0" r="1" gradientTransform="translate(160 590) rotate(-45) scale(520)">
+      <stop stop-color="#ff2bd6" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#cyan)"/>
+  <rect width="1200" height="630" fill="url(#magenta)"/>
+  <g opacity=".22" stroke="#7df9ff" fill="none">
+    <circle cx="1030" cy="115" r="82"/><circle cx="1030" cy="115" r="130"/><circle cx="1030" cy="115" r="185"/>
+  </g>
+  <g transform="translate(78 86)">
+    <rect width="1044" height="458" rx="34" fill="#071027" fill-opacity=".72" stroke="#00f5ff" stroke-opacity=".32"/>
+    <path d="M116 130 58 187l58 57M210 130l58 57-58 57" fill="none" stroke="#00f5ff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    <text x="330" y="164" fill="#eaf2ff" font-family="Arial, sans-serif" font-size="62" font-weight="700">Bruno Rafael</text>
+    <text x="330" y="224" fill="#7df9ff" font-family="Arial, sans-serif" font-size="31" font-weight="600">Analista de Tecnologia da Informação</text>
+    <line x1="330" y1="263" x2="920" y2="263" stroke="#ff2bd6" stroke-width="3" opacity=".75"/>
+    <text x="330" y="320" fill="#c4d2e7" font-family="Arial, sans-serif" font-size="27">Suporte corporativo • Infraestrutura • Cloud</text>
+    <text x="330" y="368" fill="#c4d2e7" font-family="Arial, sans-serif" font-size="27">Automação • ERP • Desenvolvimento</text>
+  </g>
+</svg>

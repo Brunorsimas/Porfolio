@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Formação acadêmica e certificações de Bruno Rafael - Análise de Sistemas, TI, Cisco, Microsoft e outras qualificações." />
-  <meta name="keywords" content="Formação TI, Análise de Sistemas, SENAC, Cisco, Microsoft, Certificações, Graduação" />
-  <meta name="author" content="Bruno Rafael" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Bruno Rafael | Formação Acadêmica & Certificações" />
-  <meta property="og:description" content="Conheça minha formação acadêmica em Análise de Sistemas e certificações em tecnologia." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://brunorsimas.github.io/formation.html" />
-  <meta property="og:image" content="https://brunorsimas.github.io/favicon.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bruno Rafael | Formação Acadêmica" />
-  <meta name="twitter:description" content="Formação contínua em Tecnologia da Informação com certificações reconhecidas." />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Formação acadêmica e certificações de Bruno Rafael - Análise de Sistemas, TI, Cisco, Microsoft e outras qualificações.">
+  <meta name="keywords" content="Formação TI, Análise de Sistemas, SENAC, Cisco, Microsoft, Certificações, Graduação">
+  <meta name="author" content="Bruno Rafael">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Bruno Rafael | Formação Acadêmica &amp; Certificações">
+  <meta property="og:description" content="Conheça minha formação acadêmica em Análise de Sistemas e certificações em tecnologia.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brunorsimas.github.io/formation.html">
+  <meta property="og:image" content="https://brunorsimas.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Bruno Rafael — formação acadêmica e certificações">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bruno Rafael | Formação Acadêmica">
+  <meta name="twitter:description" content="Formação contínua em Tecnologia da Informação com certificações reconhecidas.">
+  <meta name="twitter:image" content="https://brunorsimas.github.io/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://brunorsimas.github.io/formation.html">
+  <meta name="theme-color" content="#050714">
   
-  <title>Bruno Rafael | Formação Acadêmica & Certificações</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Bruno Rafael | Formação Acadêmica &amp; Certificações</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="formation.css">
   
@@ -27,34 +30,37 @@
     .typing { --typing-steps: 19; --typing-duration: 2.6s; }
   </style>
   
-  <!-- Custom SVG Icons -->
-  <link rel="stylesheet" href="icons.svg">
 </head>
 <body>
-  <!-- particles.js container -->
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+  <!-- Camada decorativa de partículas -->
   <div id="particles-js"></div>
   
   <!-- Sticky Navbar -->
-  <nav class="sticky-navbar" id="stickyNavbar">
-    <a href="index.html" class="sticky-navbar-logo">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <use href="#icon-code"></use>
+  <nav class="sticky-navbar" id="stickyNavbar" aria-label="Navegação principal">
+    <a href="index.html" class="sticky-navbar-logo" aria-label="Página inicial de Bruno Rafael">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <use href="icons.svg#icon-code"></use>
       </svg>
-      Bruno Rafael De Mendonça Simas
+      <span class="sticky-navbar-name">Bruno Rafael De Mendonça Simas</span>
     </a>
-    <div class="sticky-nav-links">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="sticky-nav-links" id="primary-navigation">
       <a href="index.html" class="sticky-nav-link" data-page="projetos">Projetos</a>
       <a href="skills.html" class="sticky-nav-link" data-page="habilidades">Habilidades</a>
       <a href="experience.html" class="sticky-nav-link" data-page="experiencia">Experiência</a>
       <a href="formation.html" class="sticky-nav-link" data-page="formacao">Formação</a>
       <a href="contact.html" class="sticky-nav-link" data-page="contato">Contato</a>
+      <a href="curriculo-bruno-rafael.pdf" class="sticky-nav-link nav-cv-link" download>Currículo</a>
     </div>
   </nav>
 
-  <header role="banner">
+  <header>
     <div class="header-content">
       <div class="header-text">
-        <h1><span class="typing">Formação Acadêmica</span></h1>
+        <h1 id="page-title"><span class="typing">Formação e Certificações</span></h1>
         <p>
           Formação contínua em Tecnologia da Informação com graduação em Análise de Sistemas,
           técnico em TI e múltiplas certificações em áreas estratégicas para o desenvolvimento profissional.
@@ -63,191 +69,97 @@
     </div>
   </header>
 
-  <section role="region">
-    <h2>Formação Acadêmica & Certificações</h2>
-    <div class="projects">
-      <div class="card">
-          <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
-          <p>SENAC EAD — Formação superior com foco em desenvolvimento de sistemas, lógica de programação, banco de dados e engenharia de software.</p>
-          <div class="tech">Análise de Sistemas • Desenvolvimento • Banco de Dados</div>
-      </div>
-      <div class="card">
-          <h3>Técnico em Tecnologia da Informação</h3>
-          <p>Escola Técnica SENAC — Formação técnica voltada a suporte, infraestrutura, redes, hardware e sistemas operacionais.</p>
-          <div class="tech">Suporte Técnico • Infraestrutura • Redes • Hardware</div>
-      </div>
-      <div class="card">
-          <h3>Certificações e Cursos Complementares</h3>
-          <p>
-            • Bradesco - GenAI & Dados - Digital Innovation One, 2026<br />
-            • Nexa - Machine Learning e GenAI na Prática - Digital Innovation One, 2025<br />
-            • Programação Web — Instituto Federal do Rio Grande do Sul<br />
-            • Introdução à Cibersegurança — Cisco<br />
-            • Defesa de Redes — Cisco<br />
-            • Introdução à Ciência de Dados — Cisco<br />
-            • Análise de Dados e Inteligência de Negócios — Gran Faculdade<br />
-            • Manutenção e Software de Celulares — Udemy<br />
-            • Inglês — Instituto Federal do Rio Grande do Sul<br />
-            • Design Gráfico (Corel Draw X5, Photoshop CS4, Flash CS5) — MicroLins<br />
-            • Montagem e Manutenção de Computadores — MicroLins<br />
-            • Formação de Operadores, Atendimento ao Cliente, Qualidade no Atendimento e Técnicas de Vendas — Unitec
-          </p>
-          <div class="tech">Tecnologia • Redes • Dados • Segurança • Atendimento</div>
-      </div>
-    </div>
-  </section>
+  <main class="page-main" id="conteudo-principal" tabindex="-1">
+  <section class="formation-section" aria-labelledby="page-title">
+    <section class="education-section" aria-labelledby="formacao-principal-heading">
+      <h2 class="section-title" id="formacao-principal-heading">Formação principal</h2>
+      <div class="education-grid">
+      <article class="card formation-card">
+        <span class="formation-type">Graduação</span>
+        <h2>Análise e Desenvolvimento de Sistemas</h2>
+        <p>Formação superior com foco em desenvolvimento de sistemas, lógica de programação, banco de dados e engenharia de software.</p>
+        <dl class="formation-meta">
+          <div><dt>Instituição</dt><dd>SENAC EAD</dd></div>
+          <div><dt>Período</dt><dd>Não publicado</dd></div>
+          <div><dt>Situação</dt><dd>Não publicada</dd></div>
+        </dl>
+        <ul class="tag-list" aria-label="Áreas da graduação">
+          <li>Análise de Sistemas</li><li>Desenvolvimento</li><li>Banco de Dados</li>
+        </ul>
+      </article>
 
-  <footer role="contentinfo">
+      <article class="card formation-card">
+        <span class="formation-type">Curso técnico</span>
+        <h2>Tecnologia da Informação</h2>
+        <p>Formação técnica voltada a suporte, infraestrutura, redes, hardware e sistemas operacionais.</p>
+        <dl class="formation-meta">
+          <div><dt>Instituição</dt><dd>Escola Técnica SENAC</dd></div>
+          <div><dt>Período</dt><dd>Não publicado</dd></div>
+          <div><dt>Situação</dt><dd>Não publicada</dd></div>
+        </dl>
+        <ul class="tag-list" aria-label="Áreas do curso técnico">
+          <li>Suporte Técnico</li><li>Infraestrutura</li><li>Redes</li><li>Hardware</li>
+        </ul>
+      </article>
+      </div>
+    </section>
+
+    <section class="credentials-section" aria-labelledby="credenciais-heading">
+      <div class="section-heading">
+        <div>
+          <span class="formation-type">Aprendizado contínuo</span>
+          <h2 id="credenciais-heading">Certificações e cursos complementares</h2>
+        </div>
+        <p>Credenciais organizadas por tema para facilitar consulta e verificação.</p>
+      </div>
+
+      <ul class="credentials-list">
+        <li class="credential-card credential-card--featured">
+          <time datetime="2026">2026</time>
+          <strong>GenAI &amp; Dados</strong>
+          <span>Bradesco · Digital Innovation One</span>
+        </li>
+        <li class="credential-card credential-card--featured">
+          <time datetime="2025">2025</time>
+          <strong>Machine Learning e GenAI na Prática</strong>
+          <span>Nexa · Digital Innovation One</span>
+        </li>
+        <li class="credential-card"><strong>Programação Web</strong><span>Instituto Federal do Rio Grande do Sul</span></li>
+        <li class="credential-card"><strong>Introdução à Cibersegurança</strong><span>Cisco</span></li>
+        <li class="credential-card"><strong>Defesa de Redes</strong><span>Cisco</span></li>
+        <li class="credential-card"><strong>Introdução à Ciência de Dados</strong><span>Cisco</span></li>
+        <li class="credential-card"><strong>Análise de Dados e Inteligência de Negócios</strong><span>Gran Faculdade</span></li>
+        <li class="credential-card"><strong>Manutenção e Software de Celulares</strong><span>Udemy</span></li>
+        <li class="credential-card"><strong>Inglês</strong><span>Instituto Federal do Rio Grande do Sul</span></li>
+        <li class="credential-card"><strong>Design Gráfico</strong><span>MicroLins · Corel Draw X5, Photoshop CS4 e Flash CS5</span></li>
+        <li class="credential-card"><strong>Montagem e Manutenção de Computadores</strong><span>MicroLins</span></li>
+        <li class="credential-card"><strong>Atendimento e Técnicas de Vendas</strong><span>Unitec · Formação de Operadores e Qualidade no Atendimento</span></li>
+      </ul>
+
+      <div class="credentials-verification">
+        <p><strong>Verificação:</strong> períodos, cargas horárias e identificadores ainda não foram publicados. Os comprovantes podem ser solicitados diretamente.</p>
+        <a class="verification-link" href="contact.html#contact-form">Solicitar comprovantes</a>
+      </div>
+    </section>
+  </section>
+  </main>
+
+  <footer>
     <div>
-      <strong>Contato</strong><br />
-      <a href="mailto:brafael174@gmail.com">brafael174@gmail.com</a><br />
+      <strong>Contato</strong><br>
+      <a href="mailto:brafael174@gmail.com">brafael174@gmail.com</a><br>
       <span>Paulista - PE</span>
     </div>
     <div>
-      <a href="https://github.com/Brunorsimas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-code"></use></svg> GitHub</a><br />
-      <a href="https://www.linkedin.com/in/bruno-rafael-95b781186/"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-code"></use></svg> LinkedIn</a>
+      <a href="https://github.com/Brunorsimas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="icons.svg#icon-code"></use></svg> GitHub</a><br>
+      <a href="https://www.linkedin.com/in/bruno-rafael-95b781186/"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="icons.svg#icon-code"></use></svg> LinkedIn</a>
     </div>
     <div>
-      <strong>Sobre</strong><br />
-      <span>Desenvolvido com ❤️ por Bruno Rafael</span><br />
-      <span>© 2025 Todos os direitos reservados</span>
+      <strong>Sobre</strong><br>
+      <span>Desenvolvido com ❤️ por Bruno Rafael</span><br>
+      <span>© <span data-current-year>2026</span> Todos os direitos reservados</span>
     </div>
   </footer>
-
-  <script src="site.js"></script>
-
-  <script>
-    // Animação dos cards otimizada
-    document.addEventListener('DOMContentLoaded', function() {
-      initFormationCards();
-    });
-
-    function initFormationCards() {
-      const cards = document.querySelectorAll('.card');
-
-      // Usar Intersection Observer para performance
-      Site.observeVisible(cards, {
-        threshold: 0.1,
-        visibleClass: 'visible'
-      });
-    }
-  </script>
-  
-  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  
-  <!-- particles.js configuration -->
-  <script>
-    particlesJS("particles-js", {
-      "particles": {
-        "number": {
-          "value": 400,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
-        },
-        "color": {
-          "value": "#00f5ff"
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": {
-            "width": 0,
-            "color": "#000000"
-          },
-          "polygon": {
-            "nb_sides": 5
-          },
-          "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-          }
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 10,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 40,
-            "size_min": 0.1,
-            "sync": false
-          }
-        },
-        "line_linked": {
-          "enable": false,
-          "distance": 500,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 2
-        },
-        "move": {
-          "enable": true,
-          "speed": 6,
-          "direction": "bottom",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
-      },
-      "interactivity": {
-        "detect_on": "window",
-        "events": {
-          "onhover": {
-            "enable": false,
-            "mode": "grab"
-          },
-          "onclick": {
-            "enable": false,
-            "mode": "push"
-          },
-          "resize": true
-        },
-        "modes": {
-          "grab": {
-            "distance": 300,
-            "line_linked": {
-              "opacity": 0
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 4,
-            "duration": 0.3,
-            "opacity": 1,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 200,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>
+  <script src="site.js" defer></script>
 </body>
 </html>

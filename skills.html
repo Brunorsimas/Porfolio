@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Habilidades técnicas de Bruno Rafael - Analista de TI com experiência em cloud, desenvolvimento, automação e infraestrutura." />
-  <meta name="keywords" content="Habilidades TI, Cloud Computing, AWS, Azure, Python, JavaScript, C#, Banco de Dados, Suporte Técnico" />
-  <meta name="author" content="Bruno Rafael" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Bruno Rafael | Habilidades Técnicas" />
-  <meta property="og:description" content="Conjunto de competências técnicas em cloud computing, desenvolvimento, infraestrutura e sistemas corporativos." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://brunorsimas.github.io/skills.html" />
-  <meta property="og:image" content="https://brunorsimas.github.io/favicon.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bruno Rafael | Habilidades Técnicas" />
-  <meta name="twitter:description" content="Competências em AWS, Azure, Python, C#, SQL, Redes, Servidores e muito mais." />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Habilidades técnicas de Bruno Rafael - Analista de TI com experiência em cloud, desenvolvimento, automação e infraestrutura.">
+  <meta name="keywords" content="Habilidades TI, Cloud Computing, AWS, Azure, Python, JavaScript, C#, Banco de Dados, Suporte Técnico">
+  <meta name="author" content="Bruno Rafael">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Bruno Rafael | Habilidades Técnicas">
+  <meta property="og:description" content="Conjunto de competências técnicas em cloud computing, desenvolvimento, infraestrutura e sistemas corporativos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brunorsimas.github.io/skills.html">
+  <meta property="og:image" content="https://brunorsimas.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Bruno Rafael — habilidades técnicas em TI">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bruno Rafael | Habilidades Técnicas">
+  <meta name="twitter:description" content="Competências em AWS, Azure, Python, C#, SQL, Redes, Servidores e muito mais.">
+  <meta name="twitter:image" content="https://brunorsimas.github.io/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://brunorsimas.github.io/skills.html">
+  <meta name="theme-color" content="#050714">
   
   <title>Bruno Rafael | Habilidades Técnicas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="skills.css">
   
@@ -28,34 +30,37 @@
     .typing { --typing-steps: 20; --typing-duration: 2.8s; }
   </style>
   
-  <!-- Custom SVG Icons -->
-  <link rel="stylesheet" href="icons.svg">
 </head>
 <body>
-  <!-- particles.js container -->
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+  <!-- Camada decorativa de partículas -->
   <div id="particles-js"></div>
   
   <!-- Sticky Navbar -->
-  <nav class="sticky-navbar" id="stickyNavbar">
-    <a href="index.html" class="sticky-navbar-logo">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <use href="#icon-code"></use>
+  <nav class="sticky-navbar" id="stickyNavbar" aria-label="Navegação principal">
+    <a href="index.html" class="sticky-navbar-logo" aria-label="Página inicial de Bruno Rafael">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <use href="icons.svg#icon-code"></use>
       </svg>
-      Bruno Rafael De Mendonça Simas
+      <span class="sticky-navbar-name">Bruno Rafael De Mendonça Simas</span>
     </a>
-    <div class="sticky-nav-links">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="sticky-nav-links" id="primary-navigation">
       <a href="index.html" class="sticky-nav-link" data-page="projetos">Projetos</a>
       <a href="skills.html" class="sticky-nav-link" data-page="habilidades">Habilidades</a>
       <a href="experience.html" class="sticky-nav-link" data-page="experiencia">Experiência</a>
       <a href="formation.html" class="sticky-nav-link" data-page="formacao">Formação</a>
       <a href="contact.html" class="sticky-nav-link" data-page="contato">Contato</a>
+      <a href="curriculo-bruno-rafael.pdf" class="sticky-nav-link nav-cv-link" download>Currículo</a>
     </div>
   </nav>
 
-  <header role="banner">
+  <header>
     <div class="header-content">
       <div class="header-text">
-        <h1><span class="typing">Habilidades Técnicas</span></h1>
+        <h1 id="page-title"><span class="typing">Habilidades Técnicas</span></h1>
         <p>
           Conjunto de competências técnicas desenvolvidas ao longo da carreira profissional,
           com foco em soluções corporativas, automação e infraestrutura de TI.
@@ -64,40 +69,41 @@
     </div>
   </header>
 
-  <section role="region">
-    <h2>Habilidades Técnicas</h2>
+  <main class="page-main" id="conteudo-principal" tabindex="-1">
+  <section aria-labelledby="page-title">
     <div class="skills-section">
+      <p class="skills-scale"><strong>Escala de domínio:</strong> Intermediário indica aplicação prática com autonomia nas tarefas recorrentes; Avançado indica domínio consistente em cenários variados.</p>
       <div class="skills-categories">
         <div class="skill-category">
-          <h3><i class="fas fa-cloud"></i> Cloud Computing</h3>
+          <h3>Computação em Nuvem</h3>
           <div class="skills-grid">
             <div class="skill-item">
-              <div class="skill-icon"><i class="fab fa-aws"></i></div>
+              <div class="skill-icon" data-icon="AWS" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">AWS</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
-                  <span class="skill-percentage">55%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="55" data-label="Intermediário" aria-label="AWS"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+              <div class="skill-icon" data-icon="AZ" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">Azure</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
-                  <span class="skill-percentage">55%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="55" data-label="Intermediário" aria-label="Azure"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-server"></i></div>
+              <div class="skill-icon" data-icon="☁" aria-hidden="true"></div>
               <div class="skill-info">
-                <div class="skill-name">Cloud Service</div>
+                <div class="skill-name">Serviços em Nuvem</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
-                  <span class="skill-percentage">60%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="60" data-label="Intermediário" aria-label="Serviços em Nuvem"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
@@ -105,45 +111,45 @@
         </div>
         
         <div class="skill-category">
-          <h3><i class="fas fa-code"></i> Desenvolvimento</h3>
+          <h3>Desenvolvimento</h3>
           <div class="skills-grid">
             <div class="skill-item">
-              <div class="skill-icon"><i class="fab fa-python"></i></div>
+              <div class="skill-icon" data-icon="PY" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">Python</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
-                  <span class="skill-percentage">70%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="70" data-label="Intermediário" aria-label="Python"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fab fa-html5"></i></div>
+              <div class="skill-icon" data-icon="HTML" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">HTML/CSS</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
-                  <span class="skill-percentage">80%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="80" data-label="Avançado" aria-label="HTML e CSS"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fab fa-js"></i></div>
+              <div class="skill-icon" data-icon="JS" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">JavaScript</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 55%"></div></div>
-                  <span class="skill-percentage">60%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="60" data-label="Intermediário" aria-label="JavaScript"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <div class="skill-icon" data-icon="C#" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">C#</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
-                  <span class="skill-percentage">60%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="60" data-label="Intermediário" aria-label="C sharp"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
@@ -151,35 +157,35 @@
         </div>
         
         <div class="skill-category">
-          <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+          <h3>Banco de Dados</h3>
           <div class="skills-grid">
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <div class="skill-icon" data-icon="SQL" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">SQL</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
-                  <span class="skill-percentage">60%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="60" data-label="Intermediário" aria-label="SQL"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <div class="skill-icon" data-icon="ORA" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">Oracle</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
-                  <span class="skill-percentage">60%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="60" data-label="Intermediário" aria-label="Oracle"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <div class="skill-icon" data-icon="AZ" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">Azure SQL</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
-                  <span class="skill-percentage">60%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="60" data-label="Intermediário" aria-label="Azure SQL"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
@@ -187,35 +193,35 @@
         </div>
         
         <div class="skill-category">
-          <h3><i class="fas fa-tools"></i> Suporte & Infra</h3>
+          <h3>Suporte e Infraestrutura</h3>
           <div class="skills-grid">
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+              <div class="skill-icon" data-icon="NET" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">Redes</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
-                  <span class="skill-percentage">70%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="70" data-label="Intermediário" aria-label="Redes"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-server"></i></div>
+              <div class="skill-icon" data-icon="SRV" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">Servidores</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
-                  <span class="skill-percentage">70%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="70" data-label="Intermediário" aria-label="Servidores"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-headset"></i></div>
+              <div class="skill-icon" data-icon="SUP" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">Atendimento ao Cliente</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
-                  <span class="skill-percentage">80%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="80" data-label="Avançado" aria-label="Atendimento ao Cliente"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
@@ -223,45 +229,45 @@
         </div>
         
         <div class="skill-category">
-          <h3><i class="fas fa-cogs"></i> Sistemas Corporativos</h3>
+          <h3>Sistemas Corporativos</h3>
           <div class="skills-grid">
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+              <div class="skill-icon" data-icon="ERP" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">ERP Protheus</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
-                  <span class="skill-percentage">60%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="60" data-label="Intermediário" aria-label="ERP Protheus"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+              <div class="skill-icon" data-icon="ERP" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">ERP Pirâmide</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
-                  <span class="skill-percentage">55%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="55" data-label="Intermediário" aria-label="ERP Pirâmide"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+              <div class="skill-icon" data-icon="ERP" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">Sankhya ERP</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 55%"></div></div>
-                  <span class="skill-percentage">60%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="60" data-label="Intermediário" aria-label="Sankhya ERP"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
             <div class="skill-item">
-              <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+              <div class="skill-icon" data-icon="APP" aria-hidden="true"></div>
               <div class="skill-info">
                 <div class="skill-name">Power Apps</div>
                 <div class="skill-level">
-                  <div class="skill-bar"><div class="skill-progress" style="width: 55%"></div></div>
-                  <span class="skill-percentage">55%</span>
+                  <div class="skill-bar"><div class="skill-progress" role="progressbar" data-level="55" data-label="Intermediário" aria-label="Power Apps"></div></div>
+                  <span class="skill-percentage" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
@@ -270,177 +276,24 @@
       </div>
     </div>
   </section>
+  </main>
 
-  <footer role="contentinfo">
+  <footer>
     <div>
-      <strong>Contato</strong><br />
-      <a href="mailto:brafael174@gmail.com">brafael174@gmail.com</a><br />
+      <strong>Contato</strong><br>
+      <a href="mailto:brafael174@gmail.com">brafael174@gmail.com</a><br>
       <span>Paulista - PE</span>
     </div>
     <div>
-      <a href="https://github.com/Brunorsimas"><i class="fab fa-github"></i> GitHub</a><br />
-      <a href="https://www.linkedin.com/in/bruno-rafael-95b781186/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/Brunorsimas"> GitHub</a><br>
+      <a href="https://www.linkedin.com/in/bruno-rafael-95b781186/"> LinkedIn</a>
     </div>
     <div>
-      <strong>Sobre</strong><br />
-      <span>Desenvolvido com ❤️ por Bruno Rafael</span><br />
-      <span>© 2025 Todos os direitos reservados</span>
+      <strong>Sobre</strong><br>
+      <span>Desenvolvido com ❤️ por Bruno Rafael</span><br>
+      <span>© <span data-current-year>2026</span> Todos os direitos reservados</span>
     </div>
   </footer>
-
-  <script src="site.js"></script>
-
-  <script>
-    // Animação das barras de habilidades otimizada
-    document.addEventListener('DOMContentLoaded', function() {
-      initSkillBars();
-    });
-
-    function initSkillBars() {
-      const skillBars = document.querySelectorAll('.skill-progress');
-      
-      // Usar Intersection Observer para performance
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const bar = entry.target;
-            const width = bar.style.width;
-            bar.style.width = '0%';
-            
-            // Animar apenas quando visível
-            requestAnimationFrame(() => {
-              setTimeout(() => {
-                bar.style.transition = 'width 0.8s ease-out';
-                bar.style.width = width;
-              }, 50);
-            });
-          }
-        });
-      }, { threshold: 0.1 });
-
-      skillBars.forEach((bar, index) => {
-        observer.observe(bar);
-      });
-    }
-
-    
-  </script>
-  
-  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  
-  <!-- particles.js configuration -->
-  <script>
-    particlesJS("particles-js", {
-      "particles": {
-        "number": {
-          "value": 400,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
-        },
-        "color": {
-          "value": "#00f5ff"
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": {
-            "width": 0,
-            "color": "#000000"
-          },
-          "polygon": {
-            "nb_sides": 5
-          },
-          "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-          }
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 10,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 40,
-            "size_min": 0.1,
-            "sync": false
-          }
-        },
-        "line_linked": {
-          "enable": false,
-          "distance": 500,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 2
-        },
-        "move": {
-          "enable": true,
-          "speed": 6,
-          "direction": "bottom",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
-      },
-      "interactivity": {
-        "detect_on": "window",
-        "events": {
-          "onhover": {
-            "enable": false,
-            "mode": "grab"
-          },
-          "onclick": {
-            "enable": false,
-            "mode": "push"
-          },
-          "resize": true
-        },
-        "modes": {
-          "grab": {
-            "distance": 300,
-            "line_linked": {
-              "opacity": 0
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 4,
-            "duration": 0.3,
-            "opacity": 1,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 200,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>
+  <script src="site.js" defer></script>
 </body>
 </html>

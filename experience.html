@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Experiência profissional de Bruno Rafael - Analista de TI com atuação em suporte corporativo, infraestrutura e sistemas ERP." />
-  <meta name="keywords" content="Experiência TI, Suporte Técnico, Infraestrutura, ERP, GLPI, Power Apps, Oracle" />
-  <meta name="author" content="Bruno Rafael" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Bruno Rafael | Experiência Profissional" />
-  <meta property="og:description" content="Conheça minha experiência profissional em suporte corporativo, infraestrutura, ERP e sistemas." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://brunorsimas.github.io/experience.html" />
-  <meta property="og:image" content="https://brunorsimas.github.io/favicon.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bruno Rafael | Experiência Profissional" />
-  <meta name="twitter:description" content="Trajetória profissional em Tecnologia da Informação." />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Experiência profissional de Bruno Rafael - Analista de TI com atuação em suporte corporativo, infraestrutura e sistemas ERP.">
+  <meta name="keywords" content="Experiência TI, Suporte Técnico, Infraestrutura, ERP, GLPI, Power Apps, Oracle">
+  <meta name="author" content="Bruno Rafael">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Bruno Rafael | Experiência Profissional">
+  <meta property="og:description" content="Conheça minha experiência profissional em suporte corporativo, infraestrutura, ERP e sistemas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brunorsimas.github.io/experience.html">
+  <meta property="og:image" content="https://brunorsimas.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Bruno Rafael — experiência profissional em TI">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bruno Rafael | Experiência Profissional">
+  <meta name="twitter:description" content="Trajetória profissional em Tecnologia da Informação.">
+  <meta name="twitter:image" content="https://brunorsimas.github.io/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://brunorsimas.github.io/experience.html">
+  <meta name="theme-color" content="#050714">
   
   <title>Bruno Rafael | Experiência Profissional</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="experience.css">
   
@@ -28,34 +30,37 @@
     .typing { --typing-steps: 23; --typing-duration: 3.2s; }
   </style>
   
-  <!-- Custom SVG Icons -->
-  <link rel="stylesheet" href="icons.svg">
 </head>
 <body>
-  <!-- particles.js container -->
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+  <!-- Camada decorativa de partículas -->
   <div id="particles-js"></div>
   
   <!-- Sticky Navbar -->
-  <nav class="sticky-navbar" id="stickyNavbar">
-    <a href="index.html" class="sticky-navbar-logo">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <use href="#icon-code"></use>
+  <nav class="sticky-navbar" id="stickyNavbar" aria-label="Navegação principal">
+    <a href="index.html" class="sticky-navbar-logo" aria-label="Página inicial de Bruno Rafael">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <use href="icons.svg#icon-code"></use>
       </svg>
-      Bruno Rafael De Mendonça Simas
+      <span class="sticky-navbar-name">Bruno Rafael De Mendonça Simas</span>
     </a>
-    <div class="sticky-nav-links">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="sticky-nav-links" id="primary-navigation">
       <a href="index.html" class="sticky-nav-link" data-page="projetos">Projetos</a>
       <a href="skills.html" class="sticky-nav-link" data-page="habilidades">Habilidades</a>
       <a href="experience.html" class="sticky-nav-link" data-page="experiencia">Experiência</a>
       <a href="formation.html" class="sticky-nav-link" data-page="formacao">Formação</a>
       <a href="contact.html" class="sticky-nav-link" data-page="contato">Contato</a>
+      <a href="curriculo-bruno-rafael.pdf" class="sticky-nav-link nav-cv-link" download>Currículo</a>
     </div>
   </nav>
 
-  <header role="banner">
+  <header>
     <div class="header-content">
       <div class="header-text">
-        <h1><span class="typing">Experiência Profissional</span></h1>
+        <h1 id="page-title"><span class="typing">Experiência Profissional</span></h1>
         <p>
           Trajetória profissional em Tecnologia da Informação com foco em suporte técnico corporativo,
           infraestrutura, sistemas ERP e desenvolvimento de soluções internas para otimização de processos.
@@ -64,39 +69,26 @@
     </div>
   </header>
 
-  <section role="region" class="experience-section">
-    <h2>Experiência Profissional</h2>
-    
+  <main class="page-main" id="conteudo-principal" tabindex="-1">
+  <section class="experience-section" aria-labelledby="page-title">
     <div class="timeline-container">
-      <!-- Timeline SVG Visual -->
-      <svg class="timeline-svg" viewBox="0 0 100 600" preserveAspectRatio="xMidYMid meet">
-        <!-- Vertical Line -->
-        <line x1="50" y1="20" x2="50" y2="580" stroke="rgba(56, 189, 248, 0.3)" stroke-width="2"/>
-        
-        <!-- Timeline Dots -->
-        <circle cx="50" cy="100" r="8" fill="#38bdf8" class="timeline-dot" style="animation-delay: 0s"/>
-        <circle cx="50" cy="300" r="8" fill="#38bdf8" class="timeline-dot" style="animation-delay: 0.3s"/>
-        <circle cx="50" cy="500" r="8" fill="#38bdf8" class="timeline-dot" style="animation-delay: 0.6s"/>
-        
-        <!-- Pulse Animation -->
-        <circle cx="50" cy="100" r="8" fill="none" stroke="#38bdf8" stroke-width="2" class="timeline-pulse" style="animation-delay: 0s"/>
-        <circle cx="50" cy="300" r="8" fill="none" stroke="#38bdf8" stroke-width="2" class="timeline-pulse" style="animation-delay: 0.3s"/>
-        <circle cx="50" cy="500" r="8" fill="none" stroke="#38bdf8" stroke-width="2" class="timeline-pulse" style="animation-delay: 0.6s"/>
-      </svg>
-
-      <!-- Experience Items -->
-      <div class="experience-timeline">
-        <div class="experience-item">
+      <ol class="experience-timeline" aria-label="Trajetória profissional da experiência mais recente para a mais antiga">
+        <li class="experience-item">
           <div class="experience-card">
             <div class="experience-header">
               <div class="experience-title">
                 <h3>Assistente de TI</h3>
                 <div class="experience-company">Turquesa Alimentos</div>
               </div>
+              <span class="experience-period">Atuação atual</span>
             </div>
             <p class="experience-description">
-              Atendimento a usuários via GLPI, suporte técnico presencial e remoto, apoio à infraestrutura de servidores e redes, desenvolvimento de soluções internas com Power Apps e utilização de ERP Pirâmide com banco de dados Oracle.
+              Suporte ao ambiente corporativo com atendimento via GLPI, infraestrutura, servidores, redes, ERP Pirâmide e banco de dados Oracle.
             </p>
+            <ul class="experience-highlights" aria-label="Principais contribuições">
+              <li>Apoio à continuidade operacional por meio de suporte técnico presencial e remoto.</li>
+              <li>Automação de rotinas internas com soluções desenvolvidas em Power Apps.</li>
+            </ul>
             <div class="experience-tech-badges">
               <span class="tech-badge">GLPI</span>
               <span class="tech-badge">Power Apps</span>
@@ -105,19 +97,24 @@
               <span class="tech-badge">Suporte Técnico</span>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="experience-item">
+        <li class="experience-item">
           <div class="experience-card">
             <div class="experience-header">
               <div class="experience-title">
                 <h3>Técnico de Manutenção de TI</h3>
                 <div class="experience-company">Infolab Soluções</div>
               </div>
+              <span class="experience-period">Experiência anterior</span>
             </div>
             <p class="experience-description">
-              Manutenção preventiva e corretiva de computadores, suporte a impressoras e redes, apoio na manutenção de servidores e elaboração de relatórios técnicos.
+              Manutenção preventiva e corretiva de computadores, impressoras, redes e servidores.
             </p>
+            <ul class="experience-highlights" aria-label="Principais contribuições">
+              <li>Preservação da disponibilidade dos equipamentos por meio de manutenção preventiva.</li>
+              <li>Registro de diagnósticos e intervenções em relatórios técnicos.</li>
+            </ul>
             <div class="experience-tech-badges">
               <span class="tech-badge">Suporte Técnico</span>
               <span class="tech-badge">Redes</span>
@@ -125,19 +122,24 @@
               <span class="tech-badge">Hardware</span>
             </div>
           </div>
-        </div>
+        </li>
         
-        <div class="experience-item">
+        <li class="experience-item">
           <div class="experience-card">
             <div class="experience-header">
               <div class="experience-title">
                 <h3>Assistente de Informática Jr</h3>
                 <div class="experience-company">EMIS</div>
               </div>
+              <span class="experience-period">Experiência anterior</span>
             </div>
             <p class="experience-description">
-              Suporte técnico a usuários, manutenção de infraestrutura, padronização de equipamentos e utilização do ERP Protheus em ambiente corporativo.
+              Suporte técnico a usuários, infraestrutura e ERP Protheus em ambiente corporativo.
             </p>
+            <ul class="experience-highlights" aria-label="Principais contribuições">
+              <li>Padronização de equipamentos para facilitar suporte e manutenção.</li>
+              <li>Apoio à continuidade das rotinas operacionais no ERP Protheus.</li>
+            </ul>
             <div class="experience-tech-badges">
               <span class="tech-badge">ERP Protheus</span>
               <span class="tech-badge">Infraestrutura</span>
@@ -145,163 +147,28 @@
               <span class="tech-badge">Padronização</span>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </section>
+  </main>
 
-  <footer role="contentinfo">
+  <footer>
     <div>
-      <strong>Contato</strong><br />
-      <a href="mailto:brafael174@gmail.com">brafael174@gmail.com</a><br />
+      <strong>Contato</strong><br>
+      <a href="mailto:brafael174@gmail.com">brafael174@gmail.com</a><br>
       <span>Paulista - PE</span>
     </div>
     <div>
-      <a href="https://github.com/Brunorsimas"><i class="fab fa-github"></i> GitHub</a><br />
-      <a href="https://www.linkedin.com/in/bruno-rafael-95b781186/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/Brunorsimas"> GitHub</a><br>
+      <a href="https://www.linkedin.com/in/bruno-rafael-95b781186/"> LinkedIn</a>
     </div>
     <div>
-      <strong>Sobre</strong><br />
-      <span>Desenvolvido com ❤️ por Bruno Rafael</span><br />
-      <span>© 2025 Todos os direitos reservados</span>
+      <strong>Sobre</strong><br>
+      <span>Desenvolvido com ❤️ por Bruno Rafael</span><br>
+      <span>© <span data-current-year>2026</span> Todos os direitos reservados</span>
     </div>
   </footer>
-
-  <script src="site.js"></script>
-
-  <script>
-    // Animação de cards ao scroll
-    document.addEventListener('DOMContentLoaded', function() {
-      Site.observeVisible(document.querySelectorAll('.experience-item'), {
-        threshold: 0.1,
-        visibleClass: 'visible'
-      });
-    });
-
-    function initBackToTop() {
-      // Removido
-    }
-
-    function initDrawerMenu() {
-      // Removido
-    }
-  </script>
-  
-  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  
-  <!-- particles.js configuration -->
-  <script>
-    particlesJS("particles-js", {
-      "particles": {
-        "number": {
-          "value": 400,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
-        },
-        "color": {
-          "value": "#00f5ff"
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": {
-            "width": 0,
-            "color": "#000000"
-          },
-          "polygon": {
-            "nb_sides": 5
-          },
-          "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-          }
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 10,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 40,
-            "size_min": 0.1,
-            "sync": false
-          }
-        },
-        "line_linked": {
-          "enable": false,
-          "distance": 500,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 2
-        },
-        "move": {
-          "enable": true,
-          "speed": 6,
-          "direction": "bottom",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
-      },
-      "interactivity": {
-        "detect_on": "window",
-        "events": {
-          "onhover": {
-            "enable": false,
-            "mode": "grab"
-          },
-          "onclick": {
-            "enable": false,
-            "mode": "push"
-          },
-          "resize": true
-        },
-        "modes": {
-          "grab": {
-            "distance": 300,
-            "line_linked": {
-              "opacity": 0
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 4,
-            "duration": 0.3,
-            "opacity": 1,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 200,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>
+  <script src="site.js" defer></script>
 </body>
 </html>

@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Entre em contato com Bruno Rafael - Analista de TI. Email, GitHub, LinkedIn e localização em Paulista - PE." />
-  <meta name="keywords" content="Contato TI, Email, GitHub, LinkedIn, Paulista PE, Bruno Rafael" />
-  <meta name="author" content="Bruno Rafael" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Bruno Rafael | Contato" />
-  <meta property="og:description" content="Entre em contato comigo para discutir oportunidades profissionais e projetos colaborativos." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://brunorsimas.github.io/contact.html" />
-  <meta property="og:image" content="https://brunorsimas.github.io/favicon.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bruno Rafael | Contato" />
-  <meta name="twitter:description" content="Entre em contato comigo via email, GitHub ou LinkedIn." />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Entre em contato com Bruno Rafael - Analista de TI. Email, GitHub, LinkedIn e localização em Paulista - PE.">
+  <meta name="keywords" content="Contato TI, Email, GitHub, LinkedIn, Paulista PE, Bruno Rafael">
+  <meta name="author" content="Bruno Rafael">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Bruno Rafael | Contato">
+  <meta property="og:description" content="Entre em contato comigo para discutir oportunidades profissionais e projetos colaborativos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brunorsimas.github.io/contact.html">
+  <meta property="og:image" content="https://brunorsimas.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Entre em contato com Bruno Rafael">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bruno Rafael | Contato">
+  <meta name="twitter:description" content="Entre em contato comigo via email, GitHub ou LinkedIn.">
+  <meta name="twitter:image" content="https://brunorsimas.github.io/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://brunorsimas.github.io/contact.html">
+  <meta name="theme-color" content="#050714">
   
   <title>Bruno Rafael | Contato</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="contact.css">
   
@@ -28,34 +30,37 @@
     .typing { --typing-steps: 7; --typing-duration: 1.0s; }
   </style>
   
-  <!-- Custom SVG Icons -->
-  <link rel="stylesheet" href="icons.svg">
 </head>
 <body>
-  <!-- particles.js container -->
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+  <!-- Camada decorativa de partículas -->
   <div id="particles-js"></div>
   
   <!-- Sticky Navbar -->
-  <nav class="sticky-navbar" id="stickyNavbar">
-    <a href="index.html" class="sticky-navbar-logo">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <use href="#icon-code"></use>
+  <nav class="sticky-navbar" id="stickyNavbar" aria-label="Navegação principal">
+    <a href="index.html" class="sticky-navbar-logo" aria-label="Página inicial de Bruno Rafael">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <use href="icons.svg#icon-code"></use>
       </svg>
-      Bruno Rafael De Mendonça Simas
+      <span class="sticky-navbar-name">Bruno Rafael De Mendonça Simas</span>
     </a>
-    <div class="sticky-nav-links">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="sticky-nav-links" id="primary-navigation">
       <a href="index.html" class="sticky-nav-link" data-page="projetos">Projetos</a>
       <a href="skills.html" class="sticky-nav-link" data-page="habilidades">Habilidades</a>
       <a href="experience.html" class="sticky-nav-link" data-page="experiencia">Experiência</a>
       <a href="formation.html" class="sticky-nav-link" data-page="formacao">Formação</a>
       <a href="contact.html" class="sticky-nav-link" data-page="contato">Contato</a>
+      <a href="curriculo-bruno-rafael.pdf" class="sticky-nav-link nav-cv-link" download>Currículo</a>
     </div>
   </nav>
 
-  <header role="banner">
+  <header>
     <div class="header-content">
       <div class="header-text">
-        <h1><span class="typing">Contato</span></h1>
+        <h1 id="page-title"><span class="typing">Contato</span></h1>
         <p>
           Conecte-se comigo para discutir oportunidades profissionais,
           projetos colaborativos ou simplesmente trocar experiências sobre tecnologia e inovação.
@@ -64,181 +69,76 @@
     </div>
   </header>
 
-  <main>
+  <main class="page-main contact-main" id="conteudo-principal" tabindex="-1" aria-labelledby="page-title">
     <div class="contact-container">
-      <h2 class="contact-title">Vamos Conversar?</h2>
-
-      <div class="contact-actions">
+      <nav class="contact-actions" aria-label="Canais de contato">
+        <a class="contact-action contact-action--email contact-action--primary" href="mailto:brafael174@gmail.com" title="Enviar e-mail diretamente">
+          <svg class="contact-action-icon" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+          </svg>
+          <span>E-mail</span>
+          <small>brafael174@gmail.com</small>
+        </a>
         <a class="contact-action contact-action--github" href="https://github.com/Brunorsimas" target="_blank" rel="noopener" title="Visite meu GitHub">
-          <i class="fab fa-github"></i>
-          GitHub
+          <svg class="contact-action-icon" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.91-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.95a9.3 9.3 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/>
+          </svg>
+          <span>GitHub</span>
         </a>
         <a class="contact-action contact-action--linkedin" href="https://www.linkedin.com/in/bruno-rafael-95b781186/" target="_blank" rel="noopener" title="Visite meu LinkedIn">
-          <i class="fab fa-linkedin"></i>
-          LinkedIn
+          <svg class="contact-action-icon" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M6.5 8.25H3.25V21H6.5V8.25ZM4.88 3a1.88 1.88 0 1 0 0 3.75A1.88 1.88 0 0 0 4.88 3ZM21 13.69c0-3.84-2.05-5.63-4.79-5.63-2.21 0-3.2 1.21-3.75 2.07V8.25H9.21V21h3.25v-6.31c0-1.66.31-3.27 2.37-3.27 2.03 0 2.05 1.9 2.05 3.38V21H21v-7.31Z"/>
+          </svg>
+          <span>LinkedIn</span>
         </a>
-        <a class="contact-action contact-action--email" href="mailto:brafael174@gmail.com" title="Enviar email">
-          <i class="fas fa-envelope"></i>
-          Email
-        </a>
-      </div>
+      </nav>
+
+      <form class="contact-form" id="contact-form" action="https://formsubmit.co/brafael174@gmail.com" method="post" aria-describedby="form-help">
+        <input type="hidden" name="_subject" value="Novo contato pelo portfólio">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://brunorsimas.github.io/contact.html?status=success#contact-form">
+        <div class="form-honeypot" aria-hidden="true">
+          <label for="contact-company">Empresa</label>
+          <input id="contact-company" name="_honey" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-field">
+          <label for="contact-name">Nome</label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-email">E-mail</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="120" required>
+        </div>
+        <div class="form-field form-field--full">
+          <label for="contact-message">Mensagem</label>
+          <textarea id="contact-message" name="message" rows="6" minlength="10" maxlength="2000" required></textarea>
+        </div>
+        <div class="form-field--full form-submit-row">
+          <button class="contact-submit" type="submit">Enviar mensagem</button>
+          <p class="form-help" id="form-help">Os dados são processados pelo FormSubmit e encaminhados por e-mail. Consulte a <a href="https://formsubmit.co/privacy" target="_blank" rel="noopener noreferrer">política de privacidade</a>.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
     </div>
   </main>
 
-  <footer role="contentinfo">
+  <footer>
     <div>
-      <strong>Contato</strong><br />
-      <a href="mailto:brafael174@gmail.com">brafael174@gmail.com</a><br />
+      <strong>Contato</strong><br>
+      <a href="mailto:brafael174@gmail.com">brafael174@gmail.com</a><br>
       <span>Paulista - PE</span>
     </div>
     <div>
-      <a href="https://github.com/Brunorsimas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-code"></use></svg> GitHub</a><br />
-      <a href="https://www.linkedin.com/in/bruno-rafael-95b781186/"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-code"></use></svg> LinkedIn</a>
+      <a href="https://github.com/Brunorsimas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="icons.svg#icon-code"></use></svg> GitHub</a><br>
+      <a href="https://www.linkedin.com/in/bruno-rafael-95b781186/"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="icons.svg#icon-code"></use></svg> LinkedIn</a>
     </div>
     <div>
-      <strong>Sobre</strong><br />
-      <span>Desenvolvido com ❤️ por Bruno Rafael</span><br />
-      <span>© 2025 Todos os direitos reservados</span>
+      <strong>Sobre</strong><br>
+      <span>Desenvolvido com ❤️ por Bruno Rafael</span><br>
+      <span>© <span data-current-year>2026</span> Todos os direitos reservados</span>
     </div>
   </footer>
-
-  <script src="site.js"></script>
-
-  <script>
-    // Animação de entrada
-    document.addEventListener('DOMContentLoaded', function() {
-      Site.staggerReveal(document.querySelectorAll('.contact-action'), {
-        baseDelay: 100,
-        step: 150,
-        from: 'translateX(-22px)',
-        durationMs: 600
-      });
-    });
-
-    function initBackToTop() {
-      // Removido
-    }
-
-    function initDrawerMenu() {
-      // Removido
-    }
-  </script>
-  
-  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  
-  <!-- particles.js configuration -->
-  <script>
-    particlesJS("particles-js", {
-      "particles": {
-        "number": {
-          "value": 400,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
-        },
-        "color": {
-          "value": "#00f5ff"
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": {
-            "width": 0,
-            "color": "#000000"
-          },
-          "polygon": {
-            "nb_sides": 5
-          },
-          "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-          }
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 10,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 40,
-            "size_min": 0.1,
-            "sync": false
-          }
-        },
-        "line_linked": {
-          "enable": false,
-          "distance": 500,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 2
-        },
-        "move": {
-          "enable": true,
-          "speed": 6,
-          "direction": "bottom",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
-      },
-      "interactivity": {
-        "detect_on": "window",
-        "events": {
-          "onhover": {
-            "enable": false,
-            "mode": "grab"
-          },
-          "onclick": {
-            "enable": false,
-            "mode": "push"
-          },
-          "resize": true
-        },
-        "modes": {
-          "grab": {
-            "distance": 300,
-            "line_linked": {
-              "opacity": 0
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 4,
-            "duration": 0.3,
-            "opacity": 1,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 200,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>
+  <script src="site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Currículo — Bruno Rafael de Mendonça Simas</title>
+  <style>
+    :root { color-scheme: light; --ink: #172033; --muted: #4c5a72; --accent: #086f83; --line: #cad5df; }
+    * { box-sizing: border-box; }
+    body { max-width: 210mm; margin: 0 auto; padding: 15mm; color: var(--ink); background: #fff; font: 10.5pt/1.42 Arial, sans-serif; }
+    header { display: grid; gap: 5px; padding-bottom: 12px; border-bottom: 3px solid var(--accent); }
+    h1 { margin: 0; font-size: 24pt; line-height: 1.1; }
+    h2 { margin: 17px 0 8px; color: var(--accent); font-size: 13pt; text-transform: uppercase; letter-spacing: .04em; }
+    h3 { margin: 0 0 2px; font-size: 11pt; }
+    p { margin: 0 0 6px; }
+    ul { margin: 4px 0 0; padding-left: 18px; }
+    a { color: var(--accent); }
+    .headline { color: var(--muted); font-size: 12pt; font-weight: 700; }
+    .contacts { display: flex; flex-wrap: wrap; gap: 4px 16px; color: var(--muted); }
+    .entry { margin-bottom: 12px; break-inside: avoid; }
+    .company { color: var(--muted); font-weight: 700; }
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
+    .tags span { padding: 2px 7px; border: 1px solid var(--line); border-radius: 99px; font-size: 9pt; }
+    .skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 22px; }
+    .screen-only { margin-bottom: 12px; text-align: right; }
+    .screen-only button { padding: 9px 16px; border: 0; border-radius: 8px; color: #fff; background: var(--accent); cursor: pointer; }
+    @media print { body { padding: 0; } .screen-only { display: none; } a { color: inherit; text-decoration: none; } }
+    @media (max-width: 640px) { body { padding: 22px; } .skills { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="screen-only"><button type="button" onclick="window.print()">Salvar como PDF</button></div>
+  <header>
+    <h1>Bruno Rafael de Mendonça Simas</h1>
+    <div class="headline">Analista de TI • Suporte corporativo • Infraestrutura • Cloud</div>
+    <div class="contacts">
+      <span>Paulista — PE</span>
+      <a href="mailto:brafael174@gmail.com">brafael174@gmail.com</a>
+      <a href="https://github.com/Brunorsimas">github.com/Brunorsimas</a>
+      <a href="https://www.linkedin.com/in/bruno-rafael-95b781186/">LinkedIn</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Resumo profissional</h2>
+      <p>Profissional de Tecnologia da Informação com experiência em suporte técnico corporativo, infraestrutura, sistemas ERP e desenvolvimento de soluções internas. Atuação em ambientes B2B com foco em estabilidade operacional, automação de processos e melhoria contínua.</p>
+    </section>
+
+    <section>
+      <h2>Experiência profissional</h2>
+      <article class="entry">
+        <h3>Assistente de TI</h3>
+        <div class="company">Turquesa Alimentos</div>
+        <p>Atendimento a usuários via GLPI, suporte presencial e remoto, apoio a servidores e redes, desenvolvimento de soluções internas com Power Apps e utilização do ERP Pirâmide com Oracle.</p>
+        <div class="tags"><span>GLPI</span><span>Power Apps</span><span>Oracle</span><span>ERP</span><span>Suporte</span></div>
+      </article>
+      <article class="entry">
+        <h3>Técnico de Manutenção de TI</h3>
+        <div class="company">Infolab Soluções</div>
+        <p>Manutenção preventiva e corretiva de computadores, suporte a impressoras e redes, apoio na manutenção de servidores e elaboração de relatórios técnicos.</p>
+        <div class="tags"><span>Redes</span><span>Servidores</span><span>Hardware</span><span>Suporte</span></div>
+      </article>
+      <article class="entry">
+        <h3>Assistente de Informática Jr</h3>
+        <div class="company">EMIS</div>
+        <p>Suporte a usuários, manutenção de infraestrutura, padronização de equipamentos e utilização do ERP Protheus em ambiente corporativo.</p>
+        <div class="tags"><span>ERP Protheus</span><span>Infraestrutura</span><span>Padronização</span></div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Formação</h2>
+      <article class="entry"><h3>Graduação em Análise e Desenvolvimento de Sistemas</h3><div class="company">SENAC EAD</div></article>
+      <article class="entry"><h3>Técnico em Tecnologia da Informação</h3><div class="company">Escola Técnica SENAC</div></article>
+    </section>
+
+    <section>
+      <h2>Competências</h2>
+      <div class="skills">
+        <div><strong>Cloud:</strong> AWS, Azure e Azure Functions</div>
+        <div><strong>Desenvolvimento:</strong> Python, HTML, CSS, JavaScript e C#</div>
+        <div><strong>Dados:</strong> SQL, Oracle e Azure SQL</div>
+        <div><strong>Infraestrutura:</strong> Redes, servidores e hardware</div>
+        <div><strong>Sistemas:</strong> Protheus, Pirâmide, Sankhya e GLPI</div>
+        <div><strong>Automação:</strong> Power Apps e scripts</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certificações e cursos selecionados</h2>
+      <ul>
+        <li>Bradesco — GenAI &amp; Dados, Digital Innovation One (2026)</li>
+        <li>Nexa — Machine Learning e GenAI na Prática, Digital Innovation One (2025)</li>
+        <li>Programação Web — Instituto Federal do Rio Grande do Sul</li>
+        <li>Introdução à Cibersegurança e Defesa de Redes — Cisco</li>
+        <li>Introdução à Ciência de Dados — Cisco</li>
+        <li>Análise de Dados e Inteligência de Negócios — Gran Faculdade</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
