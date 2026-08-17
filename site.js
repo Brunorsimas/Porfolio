@@ -16,6 +16,61 @@
     return reducedMotionQuery.matches;
   };
 
+  Site.initTypewriter = function () {
+    const elements = Array.from(document.querySelectorAll('[data-typewriter-speed]'));
+    if (!elements.length) return;
+
+    const items = elements.map((element) => ({
+      element,
+      text: element.textContent.replace(/\s+/g, ' ').trim(),
+      speed: Number(element.dataset.typewriterSpeed) || 40,
+      independent: element.hasAttribute('data-typewriter-independent')
+    }));
+
+    items.forEach(({ element, text }) => {
+      element.setAttribute('aria-label', text);
+      element.textContent = '';
+    });
+
+    const typeItem = function (item, onComplete) {
+      const visualText = document.createElement('span');
+      let characterIndex = 0;
+
+      visualText.setAttribute('aria-hidden', 'true');
+      item.element.appendChild(visualText);
+      item.element.classList.add('is-typing');
+
+      const typeCharacter = function () {
+        if (characterIndex < item.text.length) {
+          visualText.textContent += item.text.charAt(characterIndex);
+          characterIndex += 1;
+          window.setTimeout(typeCharacter, item.speed);
+          return;
+        }
+
+        item.element.classList.remove('is-typing');
+        item.element.classList.add('is-typed');
+        if (onComplete) onComplete();
+      };
+
+      typeCharacter();
+    };
+
+    const sequence = items.filter((item) => !item.independent);
+    const typeNext = function (itemIndex) {
+      if (itemIndex >= sequence.length) return;
+      typeItem(sequence[itemIndex], () => {
+        window.setTimeout(() => typeNext(itemIndex + 1), 300);
+      });
+    };
+
+    items
+      .filter((item) => item.independent)
+      .forEach((item) => typeItem(item));
+
+    typeNext(0);
+  };
+
   Site.observeVisible = function (elements, options) {
     const list = Array.from(elements || []);
     if (!list.length) return;
@@ -355,6 +410,7 @@
 
   Site.initAll = function () {
     Site.initCurrentYear();
+    Site.initTypewriter();
     Site.initNavbar();
     Site.initFilters();
     Site.initCarousels();

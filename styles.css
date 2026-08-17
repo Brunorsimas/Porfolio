@@ -258,6 +258,13 @@ body > * {
   color: var(--primary-light);
 }
 
+@media (min-width: 1101px) {
+  .sticky-navbar-name[data-typewriter-independent] {
+    display: inline-block;
+    min-width: 21rem;
+  }
+}
+
 .sticky-nav-links {
   display: flex;
   gap: 20px;
@@ -377,6 +384,22 @@ header h1 {
   will-change: clip-path;
 }
 
+.typewriter.is-typing::after,
+.typewriter[data-typewriter-cursor="persistent"].is-typed::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 4px;
+  vertical-align: -0.1em;
+  background: var(--primary);
+  animation: typewriter-cursor 0.75s step-end infinite;
+}
+
+@keyframes typewriter-cursor {
+  50% { opacity: 0; }
+}
+
 /* Reduzir animação para usuários com preferência de movimento reduzido */
 @media (prefers-reduced-motion: reduce) {
   .typing {
@@ -386,6 +409,7 @@ header h1 {
     border-right: none;
     padding-right: 0;
   }
+
 }
 
 @keyframes typing {
